@@ -157,6 +157,7 @@ article.product-card button {
     border-left: .5rem solid var(--green);
     border-bottom: .5rem solid var(--green);
     padding: 1rem;
+    transition: ease-in-out 1s;
 }
 
 #cartview ul {

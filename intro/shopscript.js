@@ -7,10 +7,17 @@ function addToCart(title, price) {
     renderCart()
     //Så nå må vi oppdatere label med antall produkter:
     document.querySelector("#cart .label"). innerHTML = cart.length
+
+    document.querySelector("#cartview").classList.remove("hidden")
+
+    let totalPrice
+    totalPrice = price 
+    console.log(totalPrice)
 }
 
 function renderCart() {
     //Tom variabel for å bygge HTML til produkter
+    
     let listHTML
     //Gå gjennom cart-arrayen, lag <li> for hvert produkt
     cart.map(prod => listHTML += `<li>
@@ -21,8 +28,11 @@ function renderCart() {
 </li>`)
     //Bruke en selector for å kunne finne riktig <ul>, og skrive inn listHMTL:
     document.querySelector("#cartview ul").innerHTML = listHTML;
+
+    
 }
 
 function toggleCart() {
     document.querySelector("#cartview").classList.toggle("hidden")
+
 }
