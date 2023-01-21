@@ -1,4 +1,56 @@
+:root{
+    --lightblue: #25dfe6;
+    --white: #FFFFFF;
+    --grey: #bababa;
+    --maxwidth: 1200px;
+}
+
 body {
-    background-color: white;
+    background-color: var(--white)
     
+}
+
+div.container {
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border: 2px solid black;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+   
+    background-color: var(--grey);
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    
+}
+
+main {
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+
 }
