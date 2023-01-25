@@ -94,3 +94,18 @@ const resources = [
         ]
     },
 ]
+let listHTML = ""
+function addHTML() {
+listHTML = `<h2>${resources[0].category}</h2>`
+listHTML += `<p>${resources[0].text}</p><ul>`
+resources[0].sources.map(prod => listHTML += `<li><a href ="${prod.url}">${prod.title}</a></li>
+`)
+listHTML += '</ul>'
+document.querySelector("#bodyview").innerHTML = listHTML;
+}
+
+
+// function addToBody(category, text, sources) {
+//     resources.push({category, text, sources,})
+//     console.log(resources)
+// }
