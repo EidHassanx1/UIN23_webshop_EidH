@@ -103,6 +103,38 @@ resources[0].sources.map(prod => listHTML += `<li><a href ="${prod.url}">${prod.
 listHTML += '</ul>'
 document.querySelector("#bodyview").innerHTML = listHTML;
 }
+function addCss() {
+listHTML = `<h2>${resources[1].category}</h2>`
+listHTML += `<p>${resources[1].text}</p><ul>`
+resources[1].sources.map(prod => listHTML += `<li><a href ="${prod.url}">${prod.title}</a></li>
+`)
+listHTML += '</ul>'
+document.querySelector("#bodyview").innerHTML = listHTML;
+}
+function addJava() {
+listHTML = `<h2>${resources[2].category}</h2>`
+listHTML += `<p>${resources[2].text}</p><ul>`
+resources[2].sources.map(prod => listHTML += `<li><a href ="${prod.url}">${prod.title}</a></li>
+`)
+listHTML += '</ul>'
+document.querySelector("#bodyview").innerHTML = listHTML;
+}
+function addReact() {
+listHTML = `<h2>${resources[3].category}</h2>`
+listHTML += `<p>${resources[3].text}</p><ul>`
+resources[3].sources.map(prod => listHTML += `<li><a href ="${prod.url}">${prod.title}</a></li>
+`)
+listHTML += '</ul>'
+document.querySelector("#bodyview").innerHTML = listHTML;
+}
+function addSnH() {
+listHTML = `<h2>${resources[4].category}</h2>`
+listHTML += `<p>${resources[4].text}</p><ul>`
+resources[4].sources.map(prod => listHTML += `<li><a href ="${prod.url}">${prod.title}</a></li>
+`)
+listHTML += '</ul>'
+document.querySelector("#bodyview").innerHTML = listHTML;
+}
 
 
 // function addToBody(category, text, sources) {

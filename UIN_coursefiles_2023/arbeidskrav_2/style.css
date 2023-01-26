@@ -2,6 +2,7 @@
     --lightblue: #25dfe6;
     --white: #FFFFFF;
     --grey: #bababa;
+    --black: #000000;
     --maxwidth: 1200px;
 }
 
@@ -21,8 +22,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
-    border: 2px solid black;
+    margin-top: 6rem;
+    border: 2px solid var(--black);
 }
 
 header h1 {
@@ -32,9 +33,10 @@ header h1 {
 nav {
     width: 100%;
     display: flex;
-    border: 2px solid black;
     margin-left: 0;
+    margin-bottom: 0;
     justify-content: space-between;
+    padding-top: 3rem;
 }
 
 nav button {
@@ -43,12 +45,32 @@ nav button {
     display: inline-block;
     padding: 1rem 2rem;
     text-transform: uppercase;
-    
+    border: none;
+}
+button:focus {
+    background-color: var(--lightblue);
 }
 
 section {
     width: 100%;
+    margin-top: 0;
     /* display: flex; */
-    border: 2px solid black;
+    border: 2px solid var(--black);
+    border-top: 1rem solid var(--lightblue);
+}
 
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+
+    }
+    body {
+            width: 100%;
+            display: grid;            
+    }
 }
